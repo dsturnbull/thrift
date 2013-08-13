@@ -25,6 +25,8 @@
 size_t
 strlcpy (char *dst, const char *src, size_t dst_sz);
 #else
+#ifndef strlcpy
 extern size_t strlcpy(char *, const char *, size_t);
+#endif
 #endif
 
